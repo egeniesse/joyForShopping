@@ -1,11 +1,24 @@
 var blog = (function(){
 
+	var entry = function(title, tag, mainContent){
+		//this.mainPhoto = mainPhoto || photoArr[0];
+		this.tag = tag;
+		this.title = title;
+		//this.photoArr = photoArr;
+		this.mainContent = mainContent;
+		this.postedAt = new Date();
+	};
+
 	var blogObj = {
 
-		blogPost : {},
+		posts : {},
 
-		post : function(title, photoArr, mainContent, mainPhoto){
-			this.blogPost[title] = new entry(title, photoArr, mainContent, mainPhoto);
+		addPost : function(title, tag, mainContent){
+
+			this.posts.length = this.posts.length || 0;
+
+			this.posts[title] = new entry(title, tag, mainContent);
+			this.posts.length ++;
 		},
 
 		remove : function(title){
@@ -13,18 +26,12 @@ var blog = (function(){
 		}
 	};
 
-	var entry = function(title, photoArr, mainContent, mainPhoto){
-		this.mainPhoto = mainPhoto || photoArr[0];
-		this.title = title;
-		this.photoArr = photoArr;
-		this.mainContent = mainContent;
-		this.postedAt = new Date();
-	};
-
-
-
 	return blogObj;
 })();
+
+
+console.log(blog.posts.length)
+
 
 // create an object to store the blog and invoke an anonymous function
 

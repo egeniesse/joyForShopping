@@ -3,9 +3,11 @@
 <head>
 	<title>Joy For Shopping</title>
 	<link rel="stylesheet" type="text/css" href="../css/joyForShopping.css">
+	<link rel="stylesheet" type="text/css" href="../css/formStyling.css">
 	<script type="text/javascript" src = "../javaScript/jquery.js"></script>
 	<script type="text/javascript" src "../javaScript/joyForShopping.js"></script>
 	<script type="text/javascript" src = "../javaScript/joyForShoppingUi.js"></script>
+
 
 </head>
 
@@ -33,24 +35,38 @@
 		<h1><a href = "joyForShopping.html">Joy For Shopping</a></h1>
 	</div>
 
-	<div>
+	<div class = "blogForm">
 		<form>
-			<label for = "postTitle">Blog Post Title</label>
-			<input id = "postTitle" type = "text">
+			<label for = "postTitle">Title</label>
+			<input class = "textBox" id = "postTitle" type = "text">
 			<label for = "postContent" >Main Content</label>
-			<textarea id = "postContent" ></textarea>
-			<label for = "hisStyle" >His Style</label>
-			<input class = "tags" id = "hisStyle" type = "checkBox">
-			<label for = "herStyle" >Her Style</label>
-			<input class = "tags" id = "herStyle" type = "checkBox">
-			<label for = "newTrends" >New Trends</label>
-			<input class = "tags" id = "newTrends" type = "checkBox">
-			<label for = "mommaLife" >Momma Life</label>
-			<input class = "tags" id = "mommaLife" type = "checkBox">
-			<input type = "submit" value = "Post">
+			<textarea class = "textBox" id = "postContent" ></textarea>
+
+			<label for = "relaventTags">Tags</label>
+
+			<ul id = "relaventTags" class = "tags">
+				<li>
+					<label for = "hisStyle" >His Style</label>
+					<input id = "hisStyle" type = "checkBox" value = "hisStyle">
+				</li>
+				<li>
+					<label for = "herStyle" >Her Style</label>
+					<input id = "herStyle" type = "checkBox" value = "herStyle">
+				</li>
+				<li>
+					<label for = "newTrends" >New Trends</label>
+					<input id = "newTrends" type = "checkBox" value = "newTrends">
+				</li>
+				<li>
+					<label for = "mommaLife" >Momma Life</label>
+					<input id = "mommaLife" type = "checkBox" value = "mommaLife">
+				</li>
+			</ul>
+			
+			<input class = "submitEntry" type = "submit"value = "Submit Entry">
 		</form>
 	</div>
 	
 </body>
-
+y
 </html>

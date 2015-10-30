@@ -1,0 +1,66 @@
+.blogForm {
+	width: 800px;
+	margin:30px auto;
+}
+
+
+label {
+	display: block;
+	width: 200px;
+	font-size: 16pt;
+	border-bottom: 1px solid #CCC;
+	text-align: center;
+}
+
+
+
+textarea {
+	padding: 5px;
+	resize: none;
+	width: 680px;
+	height: 280px;
+	font-size: 12pt;
+	border-color: #CCC; 
+}
+
+#postTitle {
+	padding: 5px;
+	border: 1px solid #CCC;
+	font-size: 13pt;
+}
+
+ul {
+	list-style: none;
+}
+.textBox {
+	margin: 20px 0 40px 0 ;
+}
+
+.tags {
+	width: 175px;
+	margin: 20px 0 40px 0;
+}
+.tags li {
+	margin: auto;
+	width: 130px;
+}
+
+.tags label{
+	font-size: 11pt;
+	width: 115px;
+	display: inline-block;
+	border: none;
+	text-align: left;
+}
+
+.tags input {
+	float: right;
+}
+
+input[type = "submit"]{
+	padding:0 5px;
+	font-size: 16pt;
+	font-family: "Copperplate";
+	background-color: white;
+	border: 1px solid #CCC;
+}
