@@ -1,0 +1,56 @@
+<html>
+
+<head>
+	<title>Joy For Shopping</title>
+	<link rel="stylesheet" type="text/css" href="../css/joyForShopping.css">
+	<script type="text/javascript" src = "../javaScript/jquery.js"></script>
+	<script type="text/javascript" src "../javaScript/joyForShopping.js"></script>
+	<script type="text/javascript" src = "../javaScript/joyForShoppingUi.js"></script>
+
+</head>
+
+<body>
+	<div class = "menuBar">
+		<ul class = "categories">
+			<li><a href = "#">Categories</a>
+				<ul>
+					<li><a href = "#">Her Style</a></li>
+					<li><a href = "#">His Style</a></li>
+					<li><a href = "#">Latest Trends</a></li>
+					<li><a href = "#">Baby Mama Life</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li><a href = "joyForShopping.html">Home</a></li>
+			<li><a href = "#">Shopping</a></li>
+			<li><a href = "#">About</a></li>
+			<li><a href = "#">Connect</a></li>
+			<li><a class = "addPost" href="postForm.html"> Add Post</a></li>
+		</ul>
+	</div>
+	<div class = "mainLogo">
+		<h1><a href = "joyForShopping.html">Joy For Shopping</a></h1>
+	</div>
+
+	<div>
+		<form>
+			<label for = "postTitle">Blog Post Title</label>
+			<input id = "postTitle" type = "text">
+			<label for = "postContent" >Main Content</label>
+			<textarea id = "postContent" ></textarea>
+			<label for = "hisStyle" >His Style</label>
+			<input class = "tags" id = "hisStyle" type = "checkBox">
+			<label for = "herStyle" >Her Style</label>
+			<input class = "tags" id = "herStyle" type = "checkBox">
+			<label for = "newTrends" >New Trends</label>
+			<input class = "tags" id = "newTrends" type = "checkBox">
+			<label for = "mommaLife" >Momma Life</label>
+			<input class = "tags" id = "mommaLife" type = "checkBox">
+			<input type = "submit" value = "Post">
+		</form>
+	</div>
+	
+</body>
+
+</html>

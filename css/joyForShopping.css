@@ -12,11 +12,16 @@ body {
 ul {
 	text-decoration: none;
 }
+a {
+	text-decoration: none;
+	color: black;
+}
 
 .mainLogo {
 	padding-top: 30px;
 	height: 150px;
 	width: 100%;
+	margin-bottom: 5px;
 	
 	
 }
@@ -46,10 +51,16 @@ ul {
 .menuBar li {
 	font-size: 12pt;
 	line-height: 30px;
-	width: 110px;
 	display: inline-block;
 	text-align: center;
+	
+
+}
+.menubar a {
 	color: #AAA;
+	display:block;
+	width: 110px;
+	height: 30px;
 
 }
 .categories {
@@ -74,6 +85,7 @@ ul {
 }
 .content {
 	height: 2000px;
+	background: #EFEFEF;
 }
 #selected {
 	background-color: #F7F7F7;
